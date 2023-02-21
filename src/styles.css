@@ -76,14 +76,13 @@ span label {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: color 0.3s;
     font-weight: 600;
     color: rgb(16, 63, 74);
 }
 
 span label:hover {
-    transform: scale(1.2);
-    color: rgb(8, 18, 52);
+    color: rgb(52, 6, 132);
 }
 
 input[type="radio"] {
@@ -92,7 +91,8 @@ input[type="radio"] {
 }
 
 input[type=radio]:checked~.option {
-    background: rgba(40, 107, 149, 0.642);
+    background: #7F7FD5;
+    background: linear-gradient(to right, #91b5ea50, #7595d0af, #7fa4d5ac);
     border-radius: 18px;
 }
 
@@ -192,6 +192,9 @@ input[type=radio]:checked~.option {
 }
 
 @media(min-width: 300px) and (max-width: 350px) {
+    .main {
+        padding: 10px;
+    }
     .game-quiz-container {
         width: 90%;
         height: 80vh;
@@ -222,6 +225,9 @@ input[type=radio]:checked~.option {
 }
 
 @media(min-width: 350px) and (max-width: 700px) {
+    .main {
+        padding: 10px;
+    }
     .game-quiz-container {
         width: 90%;
         height: 80vh;
